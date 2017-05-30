@@ -1,7 +1,8 @@
 {
     "db": {
         "name": "db",
-        "connector": "mysql",
+        "connector": "mongodb",
+        "port": 27017,
         "user": "root",
         "password": "",
         "database": "angularcourse",

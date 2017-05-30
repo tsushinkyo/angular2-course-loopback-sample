@@ -11,6 +11,7 @@ import { SDKBrowserModule } from './sdk/index';
 import { InputSearchComponent } from './form/input-search/input-search.component';
 import { GenericFilterComponent } from './form/generic-filter/generic-filter.component';
 import { GenericListComponent } from './generic-list/generic-list.component';
+import { LastUpercasePipe } from './pipes/last-upercase.pipe';
 
 @NgModule({
   imports: [
@@ -24,8 +25,9 @@ import { GenericListComponent } from './generic-list/generic-list.component';
   declarations: [
     InputSearchComponent,
     GenericFilterComponent,
-    GenericListComponent
+    GenericListComponent,
+    LastUpercasePipe
   ],
-  exports: [InputSearchComponent, GenericFilterComponent, GenericListComponent, BrowserAnimationsModule, SDKBrowserModule]
+  exports: [InputSearchComponent, LastUpercasePipe, GenericFilterComponent, GenericListComponent, BrowserAnimationsModule, SDKBrowserModule]
 })
 export class SharedModule { }
