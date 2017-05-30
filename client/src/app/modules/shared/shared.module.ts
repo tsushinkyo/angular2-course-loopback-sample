@@ -5,6 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MdCheckboxModule} from '@angular/material';
 import {MdListModule} from '@angular/material';
+import {MdButtonModule} from '@angular/material';
+import {MdInputModule} from '@angular/material';
 import { SDKBrowserModule } from './sdk/index';
 
 // my components
@@ -20,6 +22,8 @@ import { LastUpercasePipe } from './pipes/last-upercase.pipe';
     BrowserAnimationsModule,
     MdCheckboxModule,
     MdListModule,
+    MdButtonModule,
+    MdInputModule,
     SDKBrowserModule.forRoot()
   ],
   declarations: [
@@ -28,6 +32,6 @@ import { LastUpercasePipe } from './pipes/last-upercase.pipe';
     GenericListComponent,
     LastUpercasePipe
   ],
-  exports: [InputSearchComponent, LastUpercasePipe, GenericFilterComponent, GenericListComponent, BrowserAnimationsModule, SDKBrowserModule]
+  exports: [InputSearchComponent, MdButtonModule, MdInputModule,  LastUpercasePipe, GenericFilterComponent, GenericListComponent, BrowserAnimationsModule, SDKBrowserModule]
 })
 export class SharedModule { }
